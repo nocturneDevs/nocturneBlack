@@ -1,0 +1,415 @@
+/* apply a natural box layout model to all elements */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+body:before,
+body:after {
+  content: " ";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+body:before,
+body:after {
+  content: " ";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  margin: 0;
+  font-size: 50%;
+}
+body {
+  background-image: linear-gradient(bottom, #25252f 56%, #15151a 78%);
+  background-image: -o-linear-gradient(bottom, #25252f 56%, #15151a 78%);
+  background-image: -moz-linear-gradient(bottom, #25252f 56%, #15151a 78%);
+  background-image: -webkit-linear-gradient(bottom, #25252f 56%, #15151a 78%);
+  background-image: -ms-linear-gradient(bottom, #25252f 56%, #15151a 78%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.56, #25252f), color-stop(0.78, #15151a));
+  color: #dadad0;
+}
+body div#page {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  max-width: 96rem;
+  font-family: "Mako", sans-serif;
+}
+body div#page:before,
+body div#page:after {
+  content: " ";
+  display: table;
+}
+body div#page:after {
+  clear: both;
+}
+body div#page:before,
+body div#page:after {
+  content: " ";
+  display: table;
+}
+body div#page:after {
+  clear: both;
+}
+body div#page a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.25s linear;
+  -webkit-transition: color 0.25s ease-out;
+}
+body div#page a:hover {
+  color: #339a80;
+}
+body div#page h1 {
+  font-family: "Oxygen", "Helvetica", sans-serif;
+  font-size: 8rem;
+  text-align: center;
+}
+body div#page h2 {
+  font-family: "Oxygen", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+body div#page h3 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+body div#page p.content {
+  clear: both;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 300;
+  text-align: justify;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+body div#page p.largeContent {
+  margin-top: 4.8rem;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-align: justify;
+}
+body div#page div#nocturneWrapper {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  margin-top: 8rem;
+  margin-bottom: 0;
+}
+body div#page div#nocturneWrapper:before,
+body div#page div#nocturneWrapper:after {
+  content: " ";
+  display: table;
+}
+body div#page div#nocturneWrapper:after {
+  clear: both;
+}
+body div#page div#nocturneWrapper:before,
+body div#page div#nocturneWrapper:after {
+  content: " ";
+  display: table;
+}
+body div#page div#nocturneWrapper:after {
+  clear: both;
+}
+body div#page div.bioColumn {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  margin-top: 8rem;
+}
+body div#page div.bioColumn p.email {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+body div#page div.bioColumn p.email a {
+  text-decoration: none;
+  color: #339a80;
+  transition: color 0.25s linear;
+  -webkit-transition: color 0.25s ease-out;
+}
+body div#page div.bioColumn p.email a:hover {
+  color: #40c0a0;
+}
+body div#page div.bioColumn div.imgWrapper {
+  display: inline;
+  float: left;
+  width: 81.25%;
+  margin: 0 1.0416666666666665%;
+  margin-left: 9.374999999999998%;
+  padding: 0.5rem;
+  padding: 0;
+  margin-bottom: 0.6rem;
+  border-radius: 100%;
+}
+body div#page div.bioColumn div.imgWrapper:before,
+body div#page div.bioColumn div.imgWrapper:after {
+  content: " ";
+  display: table;
+}
+body div#page div.bioColumn div.imgWrapper:after {
+  clear: both;
+}
+body div#page div.bioColumn div.imgWrapper:before,
+body div#page div.bioColumn div.imgWrapper:after {
+  content: " ";
+  display: table;
+}
+body div#page div.bioColumn div.imgWrapper:after {
+  clear: both;
+}
+body div#page div.bioColumn div.imgWrapper img.biopic {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 10px solid #1a1a21;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+body div#page div.bioColumn p.iconwrapper {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  width: 100%;
+}
+body div#page div.bioColumn p.iconwrapper i {
+  font-size: 3rem;
+  color: #777777;
+  transition: color 0.25s linear;
+  -webkit-transition: color 0.25s ease-out;
+}
+body div#page div.bioColumn p.iconwrapper i:hover {
+  color: #339a80;
+}
+body div#page div.bioColumn p.iconwrapper a {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+body div#page div#workWrapper {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  margin-top: 8rem;
+}
+body div#page div#workWrapper h3 {
+  margin-bottom: 2.4rem;
+}
+body div#page div#workWrapper div.projectWrapper {
+  width: 100%;
+  height: 36rem;
+  float: left;
+  padding-top: 10%;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+body div#page div#workWrapper div.projectWrapper:before,
+body div#page div#workWrapper div.projectWrapper:after {
+  content: " ";
+  display: table;
+}
+body div#page div#workWrapper div.projectWrapper:after {
+  clear: both;
+}
+body div#page div#workWrapper div.projectWrapper:before,
+body div#page div#workWrapper div.projectWrapper:after {
+  content: " ";
+  display: table;
+}
+body div#page div#workWrapper div.projectWrapper:after {
+  clear: both;
+}
+body div#page div#workWrapper div.projectWrapper div.projectImageWrapper {
+  height: 60%;
+}
+body div#page div#workWrapper div.projectWrapper div.projectImageWrapper img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #1a1a21;
+  max-height: 100%;
+  width: auto;
+}
+body div#page div#workWrapper div.projectWrapper h2 {
+  color: #dadad0;
+}
+body div#page div#workWrapper div.projectWrapper p {
+  clear: both;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #777777;
+}
+body div#page div#footer {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  padding-top: 2.4rem;
+  margin-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  border-top: 1px solid #b8b8ae;
+  text-align: center;
+  font-size: 1.6rem;
+}
+body div#page div#footer div#footerText {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 62.5%;
+  }
+  body div#page div#nocturneWrapper {
+    margin-top: 18rem;
+    margin-bottom: 18rem;
+  }
+  body div#page div.bioColumn {
+    display: inline;
+    float: left;
+    width: 39.58333333333333%;
+    margin: 0 1.0416666666666665%;
+    margin-top: 8rem;
+  }
+  body div#page div.bioColumn p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+  body div#page div.bioColumn div.imgWrapper {
+    float: left;
+  }
+  body div#page div#bioColumnRight {
+    margin-left: 17.708333333333332%;
+  }
+  body div#page div#workWrapper {
+    margin-top: 18rem;
+  }
+  body div#page div#workWrapper div.projectWrapper {
+    width: 50%;
+  }
+  body div#page div#workWrapper div.projectWrapper h2 {
+    color: #dadad0;
+    transition: color 0.25s linear;
+    -webkit-transition: color 0.25s ease-out;
+  }
+  body div#page div#workWrapper div.projectWrapper p {
+    color: #777777;
+    transition: color 0.25s linear;
+    -webkit-transition: color 0.25s ease-out;
+  }
+  body div#page div#workWrapper div.projectWrapper:hover h2 {
+    color: #339a80;
+  }
+  body div#page div#workWrapper div.projectWrapper:hover p {
+    color: #dadad0;
+  }
+  body div#page div#footer {
+    font-size: 1.3rem;
+  }
+}
